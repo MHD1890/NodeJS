@@ -15,12 +15,11 @@ runcmd:
 - cd lotr
 - npm i
 - node server.js
-_____________________________________________
+  
 config your database using this code :
 MYSQL_HOST="YOUR_HOST_OR_IP" MYSQL_USER="YOUR_USER" MYSQL_PASSWORD="YOUR_PASSWORD" MYSQL_DATABASE="YOUR_NAME_DATABASE" PORT="6060" node server.js
-_____________________________________________
+
 - sudo vim /etc/systemd/system/lotr.service = Isikan kode ini sesuai dgn LKS
-_____________________________________________
 [Unit]
 Description=YourAppName
 After=multi-user.target
@@ -37,15 +36,13 @@ EnvironmentFile=/home/ec2-user/your_app_dir/app.env
 
 [Install]
 WantedBy=multi-user.target
-_____________________________________________
-- vim app.env = isikan data dari MYSQL_HOST MYSQL_USER MYSQL_PASSWORD MYSQL_DATABASE PORT="6060"
-_____________________________________________
+
+- vim app.env = isikan data dari :
 MYSQL_HOST="nodejsdb.cde3yjwwxzuh.ap-southeast-1.rds.amazonaws.com" 
 MYSQL_USER="maulamuhammad" 
 MYSQL_PASSWORD="maulamuhammad" 
-MYSQL_DATABASE="lotr" 
-_____________________________________________
+MYSQL_DATABASE="lotr"
+
 - sudo systemctl start lotr.service
 - sudo systemctl status lotr.service
-_____________________________________________
 
