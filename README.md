@@ -2,7 +2,7 @@
 Appilcation tester for deploy to EC2 Instances
 
 # Command to deploy EC2 Instances
-user data: !!!!!!!!!!SUCCES!!!!!!!!!
+user data:
 #cloud-config
 package_update: true
 package_upgrade: true
