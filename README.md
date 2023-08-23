@@ -15,10 +15,10 @@ runcmd:
 - cd lotr
 - npm i
 - node server.js
------------------------------------------
+_____________________________________________
 config your database using this code :
 MYSQL_HOST="YOUR_HOST_OR_IP" MYSQL_USER="YOUR_USER" MYSQL_PASSWORD="YOUR_PASSWORD" MYSQL_DATABASE="YOUR_NAME_DATABASE" PORT="6060" node server.js
------------------------------------------
+_____________________________________________
 - sudo vim /etc/systemd/system/lotr.service = Isikan kode ini sesuai dgn LKS
 -----------------------------------------
 [Unit]
